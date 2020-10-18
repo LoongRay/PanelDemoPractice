@@ -1,0 +1,428 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style-type: none;
+}
+
+body{
+    background-color: #000;
+}
+header {
+    width: 1280px;
+    height: 80px;
+    margin:0 auto;
+    background-color: #09264b;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+header .header-title{
+    height: 100%;
+    width: 36%;
+    display: flex;
+    align-items: center;
+}
+
+header .header-msg{
+    height: 100%;
+    width: 33.3%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+header .header-msg nav{
+    margin-right: 50px;
+}
+
+section{
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #001e31;
+}
+
+/* 左侧内容 */
+
+
+/* 左侧内容1总体概览 */
+.left-zongti{
+    color: #fff;
+    padding-left: 8px;
+    padding-right: 8px;
+    height: 200px;
+    width: 100%;
+    background-color:  #21375c;
+}
+
+.zongti-title{
+    padding-top: 12px;
+    font-size: 14px;
+}
+
+.zongti-num{
+    display: flex;
+}
+
+.zongti-num p{
+    font-size: 14px;
+}
+
+.zongti-num p span{
+    font-size: 18px;
+}
+
+.zongti-year{
+    display: flex;
+    justify-content: space-between;
+}
+
+.zongti-year .year-item{
+    width: 27.6%;
+    height: 92px;
+    background-color: #2c3f65;
+
+}
+
+.zongti-year .year-item p{
+    text-align: center;
+}
+
+.zongti-year .year-item .item1{
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.zongti-year .year-item .item2{
+    margin-top: 18px;
+}
+
+
+
+.zongti-year .year-item .item2 span{
+    font-size: 20px;
+    font-weight: bold;
+    color: #3893bb;
+}
+
+/* 左侧内容2管理闭环 */
+.left-admin{
+    height: 240px;
+    width: 100%;
+    color: #fff;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: #21375c;
+    margin-top: 7px;
+}
+
+.admin-title{
+    font-size: 14px;
+    line-height: 40px;
+}
+
+.admin-muqiang{
+    height: 94px;
+    width: 82px;
+    background-color: #2c3f65;
+    font-size: 14px;
+    text-align: center;
+}
+
+.admin-suanfa{
+    height: 94px;
+    width: 82px;
+    background-color: #2c3f65;
+    text-align: center;
+    font-size: 14px;
+    padding: 4px;
+}
+
+.admin-suanfa dl dt{
+    padding-bottom: 2px;
+}
+
+.admin-suanfa dl dd{
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+
+
+
+.admin-jiancha{
+    height: 108px;
+    width: 106px;
+    background-color: #2c3f65;
+    padding: 4px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.admin-jiancha dl dt{
+    padding-bottom: 6px;
+}
+
+.admin-jiancha dl dd{
+    font-size: 12px;
+    margin-bottom: 2px;
+    text-align: right;
+    padding-right: 8px;
+}
+
+.admin-fuhe{
+    height: 68px;
+    width: 82px;
+    background-color: #2c3f65;
+    margin-top:10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.admin-fuhe dl{
+    margin-top: 12px;
+}
+
+.admin-fuhe dl dd{
+    margin-bottom: 2px;
+}
+
+.admin-guanzhu{
+    height: 68px;
+    width: 82px;
+    background-color: #2c3f65;
+    margin-top:10px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.admin-guanzhu dl{
+    margin-top: 12px;
+}
+
+.admin-guanzhu dl dd{
+    margin-bottom: 2px;
+}
+
+.admin-rengong{
+    height: 48px;
+    width: 106px;
+    margin-top:30px;
+    text-align: center;
+    line-height: 48px;
+    font-size: 14px;
+    background-color: #2c3f65;
+    position: relative;
+}
+
+
+/*左侧内容3消息推送  */
+.left-message{
+    color: #fff;
+    background-color: #21375c;
+    padding-left: 8px;
+    padding-right: 8px;
+    height: 200px;
+    width: 380px;
+    margin-top:7px;
+    padding-top: 16px;
+}
+
+.message-item{
+    height: 52px;
+    width:100%;
+    background-color: #2c3f65;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+.message-item .message-title{
+    display: flex;
+    font-size: 12px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+
+.message-item .message-title .title-item2{
+    font-size: 10px;
+    padding-top: 2px;
+    display: flex;
+}
+
+/*进度条*/
+.message-item .message-title .title-item2 .item2-statebar{
+    margin-right: 6px;
+    margin-top: -2px;
+}
+.message-item .message-title .title-item2 .item2-statebar ul li hr{
+    width: 12px;
+    height: 2px;
+    background: #4eebf7;
+}
+.message-item .message-title .title-item2 .item2-statebar ul li .statebar-icon{
+    border: 1px solid #4eebf7;
+    background-color: #4eebf7;
+    border-radius: 20px;
+    width: 8px;
+    height: 8px;
+    margin-top: 4px;
+    color: transparent;
+    display: inline-block;
+}
+
+.message-item .message-title .title-item2 .item2-statebar ul li .statebar-iconoff{
+    border: 1px solid #fff;
+    background-color: #fff;
+    border-radius: 20px;
+    width: 8px;
+    height: 8px;
+    display: block;
+    margin-top: 4px;
+    color: transparent;
+}
+
+.message-item .message-content{
+    display: flex;
+    flex: 1;
+}
+
+.message-item .message-content .content-loca ul{
+    list-style: none;
+    display: flex;
+}
+
+.message-item .message-content .content-loca{
+    font-size: 8px;
+    width: 60%;
+}
+
+.message-item .message-content .content-time{
+    font-size: 8px;
+    width: 40%;
+    padding-left:64px;
+}
+
+/*右侧内容*/
+.panel-right{
+    height: 654px;
+    width: 380px;
+    background-color: #21375c;
+    color: #fff;
+}
+
+.right-title{
+    font-size: 14px;
+    color: #fff;
+    padding-top: 12px;
+    padding-left: 8px;
+}
+
+.right-content{
+    padding-top: 12px;
+    padding-right: 18px;
+    padding-left: 18px;
+}
+
+.content-building{
+    display: flex;
+}
+
+.building-change{
+    display: flex;
+    flex-direction: column;
+}
+
+.building-change .change1,
+.building-change .change2{
+    height: 70px;
+    width: 92px;
+}
+
+.building-state{
+    width: 240px;
+}
+
+.building-state .state-bar ul{
+    display: flex;
+    list-style-type: none;
+    font-size: 12px;
+    background-color: greenyellow;
+    height: 36px;
+    width: 100%;
+}
+
+.building-state .state-info{
+    margin-top: 12px;
+    width: 100%;
+    font-size: 10px;
+}
+
+.building-state .state-info p{
+    margin-bottom: 6px;
+}
+
+.content-building2{
+    display: flex;
+    margin-top: 14px;
+    align-items: center;
+}
+
+.content-building2 .building2-info{
+    flex: 1;
+}
+
+.content-building2 .building2-info dt{
+    font-size:12px ;
+    margin-bottom: 8px;
+}
+
+.content-building2 .building2-info dd{
+    font-size: 8px;
+    height: 26px;
+    width: 162px;
+    border: 1px solid #eee;
+    margin-bottom: 6px;
+    line-height: 26px;
+    padding-left: 8px;
+}
+
+.content-building2 .building2-wallinfo{
+    padding-left: 20px;
+}
+
+.content-building3{
+    margin-top: 10px;
+}
+
+
+.content-building3 .building3-item{
+    width: 158px;
+    height: 130px;
+    font-size: 10px;
+    margin-bottom: 6px;
+}
+
+.content-building3 .building3-item.building3-info{
+    background-color: #2c3f65;
+
+}
+
+.content-building3 .building3-item.building3-info ul{
+    padding:6px;
+}
+
+.content-building3 .building3-item.building3-info ul li{
+    padding-bottom: 12px;
+}
+
+.content-building3 .building3-item .building3-item-img{
+    width: 100%;
+    height: 100%;
+}

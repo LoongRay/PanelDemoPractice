@@ -1,0 +1,204 @@
+/*全局样式*/
+*{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000;
+    color: #fff;
+}
+
+.WaterPanel{
+    width: 1280px;
+    height: 800px;
+    background-image: url("./img/背景.png");
+    margin: 0 auto;
+    padding-left: 22px;
+    padding-top: 40px;
+    display: flex;
+}
+
+/*省水器信息*/
+.waterInfo{
+    width: 396px;
+    height: auto;
+    padding-right: 18px;
+    padding-left: 18px;
+    padding-top: 12px;
+    padding-bottom: 24px;
+    border: 2px solid #123241;
+}
+.waterInfo .infoTitle{
+    background-image: url("./img/waterTitleIcon.png");
+    background-size: cover;
+    height: 26px;
+    width: 350px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 26px;
+}
+.waterInfo .infoValue1{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 18px;
+}
+.waterInfo .infoValue1 .Value1Item{
+    /*flex: 1;*/
+}
+.waterInfo .infoValue1 .ValuePH{
+    margin-top: 26px;
+}
+.waterInfo .infoValue1 .ValuePH .ValuePHnum{
+    font-size: 30px;
+}
+.waterInfo .infoValue1 .ValuePH .ValuePHnum span{
+    font-size: 12px;
+    vertical-align: top;
+}
+.waterInfo .infoValue1 .Value1Item .ValuePHProgress{
+    display: flex;
+    margin-top: 2px;
+}
+.waterInfo .infoValue1 .Value1Item .ValuePHProgress .PHProgressItem{
+    width: 16px;
+    height: 6px;
+    border: 2px solid #f00;
+    margin-right: 1px;
+
+}
+.waterInfo .infoValue1 .FlowItem{
+    background-image: url("./img/stateRing.png");
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+}
+.waterInfo .infoValue1 .FlowItem .FlowItemTitle{
+    font-size: 28px;
+    margin-top: 18px;
+    z-index: 99;
+    background-color: #000;
+}
+.waterInfo .infoValue1 .FlowItem .FlowItemUnit{
+    font-size: 12px;
+    margin-top: 4px;
+    z-index: 99;
+}
+.waterInfo .infoValue2{
+    display: flex;
+    margin-top: 14px;
+    font-size: 12px;
+    background-color: #112332;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.waterInfo .infoValue2 .infoValue2Item{
+    margin-right: 30px;
+}
+.waterInfo .infoValue2 .infoValue2Item .Value2ItemContent{
+    font-size: 16px;
+    color: #39c6db;
+}
+.waterInfo .infoValue2 .infoValue2Item .Value2ItemContent span{
+    font-size: 10px;
+}
+
+/*看板中间内容*/
+.center{
+    width: 444px;
+    height: 100%;
+    position: relative;
+}
+
+.center .center-title{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 26px;
+}
+
+.center .centerSum{
+    background-image: url("./img/centerTitle.png");
+    background-size: contain;
+    width: 340px;
+    height: 76px;
+    margin: 14px auto;
+    padding: 14px;
+}
+
+.center .centerSum .Sum1{
+    font-size: 12px;
+}
+
+.center .centerSum .Sum2{
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.center .center-alert{
+    padding: 20px;
+    width: 400px;
+    border: 1px solid #133442;
+    margin-right: auto;
+    margin-left: auto;
+}
+.center .center-alert .alert-title{
+    font-size: 16px;
+    text-align: center;
+    background-image: url("./img/waterTitleIcon.png");
+    background-size:cover;
+    width: 344px;
+    height: 26px;
+    margin-top: 24px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center .center-alert .alert-header{
+    display: flex;
+    width: 344px;
+    height: 48px;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #770D22;
+    z-index: 2;
+}
+
+.center .center-alert .alert-header .header-content{
+    line-height: 48px;
+    z-index: 99;
+    color: #ff4c3e;
+    font-size: 12px;
+}
+
+.center .center-alert .content-detail{
+    height:216px;
+    width:100%;
+    text-align: center;
+}
+
+.coverStyle{
+    background-image: url("./img/waterStyle.png");
+    background-size: cover;
+    width: 594px;
+    height: 146px;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 154px;
+    left:670px;
+}
+
+.center .logo-img{
+    background-image: url("./img/logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 6;
+    margin:50px auto;
+    width: 168px;
+    height: 20px;
+}
